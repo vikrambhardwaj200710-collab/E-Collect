@@ -62,8 +62,21 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover:not(:disabled) {
     background-color: #176b43;
+}
+
+button:disabled {
+    background-color: #52675a;
+    cursor: not-allowed;
+}
+
+#pickup-status {
+    padding: 12px;
+    border: 1px solid #b8c9bd;
+    border-radius: 5px;
+    background-color: #f1f8f4;
+    line-height: 1.5;
 }
 
 #message {
